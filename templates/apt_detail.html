@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+						<!-- Content -->
+
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">{{ apt.title }} doma</h3>
+									<p></p>
+
+
+
+									<section class="features">
+
+										<article>
+											<a href="#" class="image"><img src="{{ apt.get_image }}" style="width: 300px; height:300px;" alt="" /></a>
+											<h3 class="major">{{ apt }}</h3>
+											<p>{{ apt.created }}</p>
+											<p>{{ apt.user }}</p>
+											<a href="url 'detail' apt.id %}" class="special">Learn more</a>
+										</article>
+									<h2>{{ apt.description|truncatewords:15 }}</h2>
+										<i class="fa-solid fa-pen-to-square"></i>
+
+									</section>
+
+								</div>
+							</div>
+
+
+{% endblock %}
